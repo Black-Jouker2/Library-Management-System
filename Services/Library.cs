@@ -84,7 +84,7 @@ namespace LibraryManagementSystem.Services
             if (book.IsAvailable)
                 throw new InvalidOperationException($"Book '{book.Title}' (ID {bookId}) is not currently borrowed.");
 
-            // البحث عن سجل الإعارة المفتوح (الأحدث)
+            
             var record = _borrowRecords
                 .Where(r => r.BookId == bookId && !r.ReturnDate.HasValue)
                 .OrderByDescending(r => r.BorrowDate)

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Library_Management_System.Interfaces
 {
-    internal class ISearchable
+    public interface ISearchable
     {
+        bool MatchesQuery(string query); // case-insensitive search
     }
 }

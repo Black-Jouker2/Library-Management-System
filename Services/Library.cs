@@ -142,7 +142,7 @@ namespace LibraryManagementSystem.Services
             return result;
         }
 
-        // ---------- دوال عرض مساعدة (تستخدمها Program) ----------//
+        
         public void DisplayAvailableBooks()
         {
             var available = GetAvailableBooks().ToList();
